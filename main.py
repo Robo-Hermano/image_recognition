@@ -54,7 +54,7 @@ print(my_model.summary())
 
 
 np.random.seed(seedy)
-my_model.fit(xtrain, ytrain, epochs = 10, batch_size = 64, validation_data = (xtest, ytest))
+my_model.fit(xtrain, ytrain, epochs = 10, batch_size = 64, validation_data = (xtest, ytest)) #using testsets as validation is a very bad idea. DO NOT TRY AT HOME
 
 
 
