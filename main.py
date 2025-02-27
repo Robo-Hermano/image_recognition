@@ -37,9 +37,12 @@ my_model = keras.models.Sequential([
 
     keras.layers.Flatten(),
     keras.layers.Dropout(0.2),
+    
     keras.layers.Dense(32, activation = 'relu'),
     keras.layers.Dropout(0.3),
+    
     keras.layers.BatchNormalization(),
+    
     keras.layers.Dense(class_num, activation = 'softmax')
 ])
 
